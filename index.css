@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+/* sub-header */
+.sub-header {
+  background-color: #4c8930;
+  padding: 0.2rem 0;
+}
+.sub-header ul li a {
+  color: white;
+}
+.dropdown-menu:hover {
+  color: #3f3f3f;
+  background-color: white;
+}
+.btn-sm {
+  background-color: white;
+  color: #3f3f3f;
+  font-size: 16px;
+}
+.btn-sm.dropdown-toggle::after {
+  margin-left: 3rem;
+  font-size: 14px;
+}
+.sub-header .container nav ul li:nth-child(3) {
+  display: grid;
+  place-items: center;
+}
+
+/* end sub-header */
+
+/* main nav */
+@media (max-width: 992px) {
+  .navbar-collapse {
+    position: absolute;
+    top: 54px;
+    left: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    width: 100%;
+    transition: all 0.4s ease;
+    display: block;
+  }
+  .navbar-collapse.collapsing {
+    height: auto !important;
+    margin-left: 50%;
+    left: 50%;
+    transition: all 0.2s ease;
+  }
+  .navbar-collapse.show {
+    left: 0;
+  }
+}
+.navbar-toggler {
+  border: none;
+}
+.main-nav {
+  padding: 1rem 0;
+}
+.main-nav .navbar .btn {
+  background-color: #4c8930;
+  color: white;
+  padding: 3px 15px;
+}
+.search-input {
+  margin-right: 1rem;
+}
+.form-inline {
+  display: flex;
+}
+#navbarNav {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* end main-nav */
+
+/* hero section  */
+.hero-banner {
+  height: 400px;
+  background: url("https://source.unsplash.com/WLUHO9A_xik/1600x900") no-repeat
+    fixed center center/cover;
+}
+
+.cta-button {
+  background-color: #4c8930;
+  color: white;
+  padding: 3px 15px;
+  border: none;
+  border-radius: 5px;
+}
