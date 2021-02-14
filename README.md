@@ -1,4 +1,4 @@
-# liana-coding
+# Lianatech Landing Page Demo
 
 This is a replicated landing page of Liana Technologies. The webpage has following features:
 
