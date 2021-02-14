@@ -14,13 +14,10 @@ section {
   background-color: #4c8930;
   padding: 0.2rem 0;
 }
-.sub-header ul li a {
+.white a {
   color: white;
 }
-.dropdown-menu:hover {
-  color: #3f3f3f;
-  background-color: white;
-}
+
 .btn-sm {
   background-color: white;
   color: #3f3f3f;
