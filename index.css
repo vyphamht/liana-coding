@@ -189,6 +189,7 @@ section {
 /* subcription */
 .subscription {
   max-width: 450px;
+  padding: 2rem 0;
 }
 .subscription .btn {
   background-color: #4c8930;
@@ -208,7 +209,7 @@ section {
 .footer {
   background-color: black;
   color: white;
-  padding: 2rem 0;
+  padding: 2rem 0 3rem 0;
 }
 .footer .navbar {
   justify-content: space-between !important;
