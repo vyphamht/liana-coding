@@ -4,11 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-    <title>Liana Technology</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="index.css">
+    
+    <title>Liana Technology</title>
 </head>
 <body>
     <header>
+      <!-- sub-header -->
         <div class="sub-header">
             <div class="container">
                 <nav>
@@ -30,48 +35,222 @@
                                     <a class="dropdown-item" href="#">På Svenska</a>
                                 </div>
                               </div>
-                        </li>                       
+                        </li>                     
                       </ul>
                       
                 </nav>
             </div>
         </div>
+        <!-- main navigation bar -->
         <div class="main-nav">
-            <nav class="container navbar navbar-expand-lg navbar-light ">
-                <a class="navbar-brand" href="#">Navbar</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                  <ul class="navbar-nav">
-                    <li class="nav-item active">
-                      <a class="nav-link" href="#">Company</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Products</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Contact Us</a>
-                    </li>
-                  </ul>
-                  <form class="form-inline">
-                    <input class="search-input" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn" type="submit">Search</button>
-                  </form>
-                </div>
-              </nav>
+          <nav class="container navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="#">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/d/d8/Liana-logo-RGB.png" alt="liana-logo" width="100">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse navbarNav" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Company</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Products</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contact Us</a>
+                </li>
+              </ul>
+              <form class="form-inline">
+                <input class="input" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
+            </div>
+          </nav>
         </div>
     </header>
+
+    <!-- hero banner -->
     <section class="hero-banner">
+      <div class="text-center">
         <h1>
             Software fueling digital marketing
         </h1>
         <button class="cta-button">
             Learn more
         </button>
+      </div>
     </section>
-    <footer>
+    <section class="company-details container">
+      <div class="company-detail company">
+        <h5>
+          Company
+        </h5>
+      </div>
+      <div class="company-detail products">
+        <h5>
+          Products
+        </h5>
+      </div>
+      <div class="company-detail contact-us">
+        <h5>
+          Contact Us
+        </h5>
+      </div>
+      
+    </section>
+    <section>
+      <div class="company-by-numbers">
+        <div class="number">
+          <div class="icon">
+            <img src="./assets/icons/Business.png" alt="business" style=" height: 40px;">
+          </div>
+          <div class="number-of clients">
+            <h1 class="timer count-title count-number" data-to="3000" data-speed="2000"></h1>
+            <h6>
+              Clients
+            </h6>
+          </div>
+        </div>
+        <div class="number">
+          <div class="icon">
+            <img src="./assets/icons/Face.png" alt="business" style=" height: 40px;">
+          </div>
+          <div class="number-of employees">
+            <h1 class="timer count-title count-number" data-to="180" data-speed="2000">180</h1>
+            <h6>
+              Employees
+            </h6>
+          </div>
+        </div>
+        <div class="number">
+          <div class="icon">
+            <img src="./assets/icons/Public.png" alt="business" style=" height: 40px;">
+          </div>
+          <div class="number-of">
+            <h1 class="timer count-title count-number" data-to="10000" data-speed="2000">10000</h1>
+            <h6>
+              Daily users
+            </h6>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="latest-news">
+      <h3 class="text-center">Latest news</h3>        
+      </div>
+      <div class="container slider">
+        <div>           
+           <div class="row">
+           <span id="feedarea"></span>
+          </div>                   
+        </div>
+</div>
 
+    </section>
+    <section class="references container">
+      <h3 class="text-center">References</h3>
+      <div class="companies row justify-content-center">
+        <div class="card text-center" style="width: 14rem;">
+          <img class="card-img-top" src="./assets/bosch.png" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Robert Bosch</h5>
+            <p class="card-text">Bosch is a multinational engineering and electronics company.</p>
+          </div>
+        </div>
+        <div class="card text-center" style="width: 14rem;">
+          <img class="card-img-top" src="./assets/bodyshop.png" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">The Body Shop</h5>
+            <p class="card-text">The Body Shop is a global beauty brand and it has more than 3000
+              stores in more than 60 countries</p>
+          </div>
+        </div>
+        <div class="card text-center" style="width: 14rem;">
+          <img class="card-img-top" src="./assets/laplandhotels.png" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Lapland Hotels</h5>
+            <p class="card-text">Lapland Hotels is the largest and the most diverse hotel chain in
+              Lapland.</p>
+          </div>
+        </div>
+        <div class="card text-center" style="width: 14rem;">
+          <img class="card-img-top" src="./assets/ikea.png" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">IKEA</h5>
+            <p class="card-text">IKEA is a multinational furniture store.</p>
+          </div>
+        </div>
+      </div>
+      
+    </section>
+    <hr>
+    <section class="subscription container text-center justify-content-center">
+      <h3>Subscribe to our newsletter</h3>
+      <p>Follow our story and get the latest promotional
+        <br/>news about our products and events.</p>
+      <form class="show main-subscription-form">        
+          <input id="email" class="form-control input" type="email" placeholder="Your email address" aria-label="Search">
+          <button class="btn subbtn " type="button" disabled="disabled" onclick="subcribe()">Subscribe</button>
+      </form>
+      <h5 id="successful-sub" class="hide">You've successfully subscribed to our newsletter!</h5>
+    </section>
+    <footer class="footer">
+        <div class="container">
+          <nav class="container footer-nav">
+            <a class="navbar-brand" href="#">Liana Technologies</a>
+          
+            <div >
+              <ul>
+                <li>
+                  <a  href="#">Company</a>
+                </li>
+                <li>
+                  <a  href="#">Products</a>
+                </li>
+                <li>
+                  <a href="#">Contact us</a>
+                </li>
+                <li>
+                  <a href="#">News</a>
+                </li>
+                <li>
+                  <a href="#">Intranet</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+          <div class="contact-address">
+            <div class="address">
+              <div class="contact-info">
+                <p>
+                  <strong>
+                    Sales and inquiries
+                  </strong>
+                </p>
+                <a href="mailto: sales@lianatech.com" target="_blank">Email: sales@lianatech.com</a>
+                <a href="tel:+358 10 387 7053">Phone: +358 10 387 7053</a>
+              </div>
+              <button class="contact-btn">
+                Contact us
+              </button>
+            </div>
+
+            <div class="social-media">
+              <div class="circle">
+                <i class="fa fa-facebook-f"></i>
+              </div>
+              <div class="circle">
+                <i class="fa fa-twitter"></i>
+              </div>
+              <div class="circle">
+                <i class="fa fa-linkedin "></i>
+              </div>
+            </div>
+          </div>
+        </div>
     </footer>
    
     <!-- bootstrap -->
@@ -80,5 +259,6 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+    <script src='./index.js'></script>
 </body>
 </html>

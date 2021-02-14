@@ -1,6 +1,13 @@
 * {
   margin: 0;
   box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+h3 {
+  font-weight: 500;
+}
+section {
+  margin-bottom: 2rem;
 }
 /* sub-header */
 .sub-header {
@@ -31,46 +38,24 @@
 /* end sub-header */
 
 /* main nav */
-@media (max-width: 992px) {
-  .navbar-collapse {
-    position: absolute;
-    top: 54px;
-    left: 100%;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-bottom: 15px;
-    width: 100%;
-    transition: all 0.4s ease;
-    display: block;
-  }
-  .navbar-collapse.collapsing {
-    height: auto !important;
-    margin-left: 50%;
-    left: 50%;
-    transition: all 0.2s ease;
-  }
-  .navbar-collapse.show {
-    left: 0;
-  }
-}
 .navbar-toggler {
   border: none;
 }
 .main-nav {
-  padding: 1rem 0;
+  padding: 0.5rem 0;
 }
 .main-nav .navbar .btn {
   background-color: #4c8930;
   color: white;
-  padding: 3px 15px;
+  padding: 5px 15px;
 }
-.search-input {
+.input {
   margin-right: 1rem;
 }
 .form-inline {
   display: flex;
 }
-#navbarNav {
+.navbarNav {
   display: flex;
   justify-content: space-between;
 }
@@ -80,14 +65,269 @@
 /* hero section  */
 .hero-banner {
   height: 400px;
-  background: url("https://source.unsplash.com/WLUHO9A_xik/1600x900") no-repeat
-    fixed center center/cover;
+  background: url("./assets/hero-image.jpg") no-repeat fixed center center/cover
+    rgba(0, 0, 0, 0.5);
+  background-blend-mode: multiply;
+  display: grid;
+  place-items: center;
 }
-
+.hero-banner h1 {
+  font-family: "Open Sans";
+  color: white;
+  padding-bottom: 1rem;
+  font-weight: 200;
+}
 .cta-button {
   background-color: #4c8930;
   color: white;
-  padding: 3px 15px;
+  padding: 5px 15px;
   border: none;
   border-radius: 5px;
+}
+
+/* end hero section */
+
+/* company detail and numbers */
+.company-details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.company-detail {
+  height: 150px;
+  width: 250px;
+  display: grid;
+  place-items: center;
+  margin: 2rem 0.5rem;
+  background-color: #4c8930;
+  color: white;
+}
+.company-by-numbers,
+.number {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+.icon {
+  display: flex;
+  align-self: center;
+}
+.number-of {
+  margin-left: 2rem;
+}
+.number-of h1 {
+  width: 100px;
+  font-weight: 300;
+}
+.clients,
+.employees {
+  margin-right: 3rem;
+}
+.company {
+  background: url(./assets/company.jpg) no-repeat center center/cover
+    rgba(0, 0, 0, 0.5);
+  background-blend-mode: multiply;
+}
+.products {
+  background: url(./assets/products.jpg) no-repeat center center/cover
+    rgba(0, 0, 0, 0.5);
+  background-blend-mode: multiply;
+}
+.contact-us {
+  background: url(./assets/contact-us.jpg) no-repeat center center/cover
+    rgba(0, 0, 0, 0.5);
+  background-blend-mode: multiply;
+}
+
+/* end company detail and numbers */
+
+/* news */
+.latest-news {
+  background-color: #eceeef;
+  padding: 2rem 0;
+}
+.latest-news h3 {
+  margin-bottom: 2rem;
+}
+#feedarea {
+  display: flex;
+  flex-direction: row;
+}
+.slider {
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+.news-card {
+  min-width: 250px;
+  background-color: white;
+  padding: 1rem;
+  margin: 0.5rem;
+}
+.news-card a {
+  text-decoration: none;
+  color: #212529;
+}
+/* end news */
+
+/* reference */
+.referneces .companies {
+}
+.references .companies .card-body {
+  border-top: 1px solid rgba(0, 0, 0, 0.125);
+}
+.card-img-top {
+  padding: 1rem 0;
+}
+.references .companies .card {
+  margin: 0.5rem;
+}
+/* end reference */
+
+/* subcription */
+.subscription {
+  max-width: 450px;
+}
+.subscription .btn {
+  background-color: #4c8930;
+  color: white;
+  padding: 5px 15px;
+  border-radius: 5px;
+}
+
+.show {
+  visibility: visible;
+  display: flex;
+}
+.hide {
+  display: none;
+}
+/* footer */
+.footer {
+  background-color: black;
+  color: white;
+  padding: 2rem 0;
+}
+.footer .navbar {
+  justify-content: space-between !important;
+}
+.footer-nav {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.footer-nav ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer-nav ul li {
+  list-style: none;
+  padding: 0.5rem;
+}
+.footer-nav ul a,
+.footer-nav a,
+.footer a {
+  text-decoration: none;
+  color: white;
+}
+nav.container.footer-nav {
+  padding: 0 !important;
+}
+.contact-info {
+  display: flex;
+  flex-direction: column;
+}
+.address {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  flex-wrap: wrap;
+}
+.contact-btn {
+  background-color: #4c8930;
+  color: white;
+  padding: 5px 15px;
+  border: none;
+  border-radius: 5px;
+  margin-left: 2rem;
+  margin-bottom: 0.33rem;
+}
+.circle {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background-color: #4c8930;
+  display: grid;
+  place-items: center;
+  margin: 0.5rem;
+}
+.social-media {
+  display: flex;
+  flex-direction: row;
+}
+.contact-address {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-wrap: wrap;
+}
+
+/* customise responsiveness  */
+
+@media only screen and (max-width: 600px) {
+  .sub-header .nav .nav-item,
+  .sub-header .btn {
+    font-size: 0.75rem;
+  }
+  .company-by-numbers :nth-child(1) .number-of,
+  .company-by-numbers :nth-child(2) .number-of {
+    margin-right: 0;
+  }
+  .navbarNav {
+    display: grid;
+  }
+  .navbar-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .company-by-numbers {
+    display: grid;
+    place-items: center;
+  }
+  .contact-btn {
+    margin: 1rem 0;
+  }
+  .footer-nav {
+    justify-content: space-around;
+  }
+  .footer-nav ul {
+    flex-direction: column;
+  }
+  .contact-address {
+    justify-content: space-around;
+  }
+  .address {
+    display: grid;
+    place-items: center;
+  }
+  .social-media {
+    margin-bottom: 0.45rem;
+  }
+}
+@media only screen and (min-width: 600px) and (max-width: 770px) {
+  .company-detail {
+    width: 400px;
+  }
+  .number {
+    width: 120px;
+  }
+}
+@media only screen and (min-width: 771px) and (max-width: 1024px) {
+  .company-detail {
+    width: 200px;
+  }
 }
